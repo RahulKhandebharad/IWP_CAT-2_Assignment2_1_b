@@ -1,0 +1,74 @@
+<html>
+   <head>
+      <title>JavaScript Array Object - Methods</title>
+   </head>
+   
+   <body>   
+      <script type = "text/javascript">
+         document.write("JavaScript Array Object - Methods");
+         document.write("<br />"); 
+          
+         var alpha = ["a", "b", "c"];
+         var numeric = [1, 2, 3];
+         var alphaNumeric = alpha.concat(numeric);
+         document.write("<br />alphaNumeric : " + alphaNumeric ); 
+          
+         document.write("<br />");
+         document.write("<br />");
+          
+         var arr = new Array("First","Second","Third");
+         var str = arr.join();
+         document.write("str : " + str ); 
+         var str = arr.join(", ");
+         document.write("<br />str : " + str ); 
+          
+         document.write("<br />");
+         document.write("<br />");
+          
+         var numbers = [1, 4, 9];
+         var element = numbers.pop();
+         document.write("element is : " + element ); 
+         var element = numbers.pop();
+         document.write("<br />element is : " + element );
+          
+         document.write("<br />");
+         document.write("<br />");
+          
+         var numbers = new Array(1, 4, 9);
+         var length = numbers.push(10);
+         document.write("new numbers is : " + numbers ); 
+         length = numbers.push(20);
+         document.write("<br />new numbers is : " + numbers );  
+          
+         document.write("<br />");
+         document.write("<br />");
+          
+         var arr1 = ["orange", "mango", "banana", "sugar", "tea"];
+         document.write("arr.slice( 1, 2) : " + arr1.slice( 1, 2) ); 
+         document.write("<br />arr.slice( 1, 3) : " + arr1.slice( 1, 3) );
+          
+         document.write("<br />");
+         document.write("<br />");
+         
+         var arr2 = new Array("orange", "mango", "banana", "sugar");         
+         var sorted = arr2.sort();
+         document.write("Returned string is : " + sorted );
+         
+         document.write("<br />");
+         document.write("<br />");
+          
+         var removed = arr1.splice(2, 0, "water");
+         document.write("After adding 1: " + arr1 );
+         document.write("<br />removed is: " + removed);
+         removed = arr1.splice(3, 1);
+         document.write("<br />After adding 1: " + arr1 );
+         document.write("<br />removed is: " + removed); 
+          
+         document.write("<br />");
+         document.write("<br />");
+          
+         var str = arr2.toString();
+         document.write("Returned string is : " + str );
+      </script>      
+   </body>
+</html>
